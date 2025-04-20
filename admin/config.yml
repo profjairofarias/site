@@ -1,1 +1,18 @@
+backend:
+  name: git-gateway
+  branch: main # ou o nome do seu branch principal
+
+media_folder: "static/images/uploads" # Pasta onde as imagens serão armazenadas
+public_folder: "/images/uploads" # URL pública para acessar as imagens
+
+collections:
+  - name: "posts" # Nome da coleção
+    label: "Posts" # Rótulo que aparecerá no CMS
+    folder: "content/posts" # Pasta onde os arquivos de post serão armazenados
+    create: true # Permite criar novos posts
+    slug: "{{slug}}" # Usado para gerar URLs
+    fields: # Campos que você deseja incluir
+      - { label: "Título", name: "title", widget: "string" }
+      - { label: "Data", name: "date", widget: "datetime" }
+      - { label: "Conteúdo", name: "body", widget: "markdown" }
 
