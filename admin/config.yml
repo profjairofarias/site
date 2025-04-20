@@ -1,6 +1,6 @@
 backend:
   name: git-gateway
-  branch: main # ou o nome do seu branch principal
+  branch: preview # ou o nome do seu branch principal
 
 media_folder: "static/images/uploads" # Pasta onde as imagens serão armazenadas
 public_folder: "/images/uploads" # URL pública para acessar as imagens
