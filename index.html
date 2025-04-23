@@ -480,7 +480,20 @@
             .social-links a { font-size: 1.5rem; margin: 0 10px; }
             footer { font-size: 0.8rem; }
         }
-    </style>
+    
+/* --- VLibras widget --- */
+.vw-access-button {
+    position: fixed;
+    bottom: 20px;
+    left: 20px;
+    z-index: 2000;
+}
+
+
+</style>
+
+<!-- Adicione esta linha antes de </head> -->
+<script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
 </head>
 <body>
 
@@ -511,7 +524,7 @@
                 <!-- TÍTULO CORRIGIDO -->
                 <h2>Neuropsicopedagogo Institucional e Psicopedagogo Institucional</h2> 
                 <span class="sbnpp-reg">
-                    <a href="https://www.sbnpp.org.br/" target="_blank" rel="noopener noreferrer" title="Sociedade Brasileira de Neuropsicopedagogia">SBNPp 23539</a>
+                    <a href="https://www.sbnpp.org.br/associados" target="_blank" rel="noopener noreferrer" title="Sociedade Brasileira de Neuropsicopedagogia">SBNPp 23539</a>
                 </span>
                 <p style="margin-bottom: 30px; max-width: 600px; margin-left: auto; margin-right: auto; color: rgba(255, 255, 255, 0.9);">
                     Especialista em processos de aprendizagem, desenvolvimento infantil e estratégias educacionais inovadoras.
@@ -817,5 +830,15 @@
 
     </script>
 
+<!-- VLibras Widget -->
+<div vw class="enabled">
+    <div vw-access-button class="active"></div>
+    <div vw-plugin-wrapper>
+        <div class="vw-plugin-top-wrapper"></div>
+    </div>
+</div>
+<script>
+    new window.VLibras.Widget('https://vlibras.gov.br/app');
+</script>
 </body>
 </html>
